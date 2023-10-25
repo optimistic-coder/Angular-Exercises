@@ -1,0 +1,15 @@
+<div>
+    <div style="width: 30%;margin-left: 30%;margin-top: 5%;">
+      <div style="display: flex;flex-direction: row;">
+        <input  [value]="userInput" class="form-control" [(ngModel)]="userInput" placeholder="Enter task"/>
+        <button class="btn btn-primary ml-1" (click)="addTodoItem()">Submit</button>
+      </div>
+        <ul *ngFor="let item of todos" class="list-group mt-1">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{item.text}}
+            <span (click)="removeTodoItem(item.id)"><i-bs style="cursor: pointer;"  class="badge badge-danger badge-pill" name="trash" ></i-bs></span>
+          </li>
+        </ul>
+  
+  </div>
+  </div>
