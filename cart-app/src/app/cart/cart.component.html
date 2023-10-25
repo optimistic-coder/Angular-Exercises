@@ -1,0 +1,15 @@
+<div style="display: flex; flex-direction: row; ">
+    <div *ngFor="let item of data" class="mr-2 mt-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">{{item.desc}}</p>
+            <a style="color: white;"  class="btn btn-primary"  (click)="removeCart(item)">Remove</a>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="data.length==0">
+       <span class="empty">Cart is Empty</span>
+      </div>
+</div>

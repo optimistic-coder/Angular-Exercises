@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand ml-2" href="#">Cart</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home </a>
+        </li> -->
+     
+      
+     
+      </ul>
+      <form class="form-inline my-2 my-lg-0 mr-2">
+            <i-bs routerLink="cart" style="cursor: pointer;" width="25" height="25"   name="cart-fill"></i-bs>
+       
+          <span class='badge badge-warning' id='lblCartCount'> {{data.length}} </span>
+      </form>
+    </div>
+  </nav>
